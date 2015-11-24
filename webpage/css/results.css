@@ -1,0 +1,10 @@
+#logo{
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	font-size: 26px;
+}
+.herologo a:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}

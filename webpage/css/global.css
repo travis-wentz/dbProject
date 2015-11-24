@@ -1,0 +1,20 @@
+body {
+    background:#BEEBFF;
+}
+#hero-title{
+   position: absolute;
+   top: 34%;
+   left: 32%;
+   font-size: 64px;
+}
+#wrapper{
+   position: absolute;
+   top: 48%;
+   left: 33%;
+}
+.styled-select select{
+   width: 180px;
+   font-size: 18px;
+   line-height: 1;
+   height: 34px;
+}
