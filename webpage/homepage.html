@@ -8,30 +8,36 @@
 		<link rel="stylesheet" href="css/global.css" type="text/css">
 	</head>
 	<body>
+		<script src="myscripts.js" type="text/javascript"></script>
 		<div id="hero-title">
 			<p>Craigslist Helper</p>
 		</div>
 		<div id="wrapper">
 		<div class="styled-select">
-	        <select>
-			   <option>Select a city</option>
-			   <option>Bozeman</option>
-			   <option>Seattle</option>
-			   <option>Las Angeles</option>
+	        <select name="selected1">
+			   <option value="none">Select a city</option>
+			   <option value="Bozeman">Bozeman</option>
+			   <option value="Seattle">Seattle</option>
+			   <option value="Las Angeles">Las Angeles</option>
 			</select>
-			<select>
-				<option>Select a Housing Type</option>
-                <option>House (buy)</option>
-                <option>House (rent)</option>
-                <option>Apartment</option>
-                <option>Condo</option>
-                <option>Trailer</option>
-                <option>Land</option>
+			<select name="selected2">
+				<option value="none">Select a Housing Type</option>
+                <option value="HouseBuy">House (buy)</option>
+                <option value="HouseRent">House (rent)</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Condo">Condo</option>
+                <option value="Trailer">Trailer</option>
+                <option value="Land">Land</option>
 			</select>
+			<script>
+					var cityy = document.getElementsByName("selected1");
+					var htypee = document.getElementsByName("selected2");
+					var city = cityy.innerHTML;
+					var htype = htypee.innerHTML; 
+			</script>
 			<!-- MAKE A PAGE FOR EACH TYPE OF RESULT AND HAVE 'GO' BUTTON GO TO PAGE BASED ON SELECTION -->
-			<a href="html/houseRent.html">
-				<button type="button">GO!</button>
-			</a>
+			<input type="button" onclick="cityAndType(city, htype)" value="GO!" />
+			<p id="error"></p>
 		</div>
 		</div>
 	</body>
