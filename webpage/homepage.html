@@ -14,13 +14,13 @@
 		</div>
 		<div id="wrapper">
 		<div class="styled-select">
-	        <select name="selected1">
+	        <select id="selected1" onchange="getVal1()">
 			   <option value="none">Select a city</option>
 			   <option value="Bozeman">Bozeman</option>
 			   <option value="Seattle">Seattle</option>
 			   <option value="Las Angeles">Las Angeles</option>
 			</select>
-			<select name="selected2">
+			<select id="selected2" onchange="getVal2()">
 				<option value="none">Select a Housing Type</option>
                 <option value="HouseBuy">House (buy)</option>
                 <option value="HouseRent">House (rent)</option>
@@ -30,14 +30,19 @@
                 <option value="Land">Land</option>
 			</select>
 			<script>
-					var cityy = document.getElementsByName("selected1");
-					var htypee = document.getElementsByName("selected2");
-					var city = cityy.innerHTML;
-					var htype = htypee.innerHTML; 
+				var city = "none";
+				var htype = "none";
+			    function getVal1() {
+			        city = document.getElementById("selected1").value;
+			    }
+			    function getVal2(){
+			    	htype = document.getElementById("selected2").value;
+			    }
 			</script>
 			<!-- MAKE A PAGE FOR EACH TYPE OF RESULT AND HAVE 'GO' BUTTON GO TO PAGE BASED ON SELECTION -->
 			<input type="button" onclick="cityAndType(city, htype)" value="GO!" />
 			<p id="error"></p>
+			<p id="error1"></p>
 		</div>
 		</div>
 	</body>

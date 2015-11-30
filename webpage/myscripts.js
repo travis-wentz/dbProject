@@ -1,15 +1,14 @@
-function cityAndType(var1, var2) {
+function cityAndType(city, htype) {
     var text = "hi";
-
-    // window.alert(city);
-    // return;
-    document.getElementById("error").innerHTML = var1;
+    document.getElementById("error").innerHTML = city;
+    document.getElementById("error1").innerHTML = htype;
     return;
 
     switch(city){
-        case 'Bozeman':
+        case "Bozeman":
             switch(htype){
-                case 'HouseBuy':
+                case "HouseBuy":
+                	window.alert(city);
                     window.location = "file:///Users/TravisWentz/github/dbProject/webpage/html/houseBuy.html";
                     //houseBuy.html;
                     //SQL to get houses to buy in Bozeman;
