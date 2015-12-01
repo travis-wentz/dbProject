@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<title>Craigslist Helper</title>
+		<link rel="stylesheet" href="css/reset.css" type="text/css">
+		<link rel="stylesheet" href="css/global.css" type="text/css">
+	</head>
+	<body>
+		<script src="myscripts.php" type="text/javascript"></script>
+		<div id="hero-title">
+			<p>Craigslist Helper</p>
+		</div>
+		<div id="wrapper">
+		<div class="styled-select">
+	        <select id="selected1" onchange="getVal1()">
+			   <option value="none">Select a city</option>
+			   <option value="Bozeman">Bozeman</option>
+			   <option value="Seattle">Seattle</option>
+			   <option value="Las Angeles">Las Angeles</option>
+			</select>
+			<select id="selected2" onchange="getVal2()">
+				<option value="none">Select a Housing Type</option>
+                <option value="HouseRent">House</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Condo">Condo</option>
+                <option value="Trailer">Trailer</option>
+                <option value="Land">Land</option>
+			</select>
+			<script>
+				var city = "none";
+				var htype = "none";
+			    function getVal1() {
+			        city = document.getElementById("selected1").value;
+			    }
+			    function getVal2(){
+			    	htype = document.getElementById("selected2").value;
+			    }
+			</script>
+			<!-- MAKE A PAGE FOR EACH TYPE OF RESULT AND HAVE 'GO' BUTTON GO TO PAGE BASED ON SELECTION -->
+			<input type="button" onclick="cityAndType(city, htype)" value="GO!" />
+			<p id="error"></p>
+			<p id="error1"></p>
+		</div>
+		</div>
+	</body>
+</html>
