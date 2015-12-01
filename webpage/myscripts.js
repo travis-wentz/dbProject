@@ -8,23 +8,23 @@ function cityAndType(city, htype) {
         case "Bozeman":
             switch(htype){
                 case("HouseRent"):
-                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/html/houseRent.html";
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get houses to rent in Bozeman;
                     break;
                 case("Apartment"):
-                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/html/apartment.html";
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get apartments in Bozeman;
                     break;
                 case("Condo"):
-                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/html/condo.html";
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get condos in Bozeman;
                     break;
                 case("Trailer"):
-                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/html/trailer.html";
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get trailers in Bozeman;
                     break;
                 case("Land"):
-                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/html/land.html";
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get land in Bozeman;
                     break;
                 default:
@@ -34,28 +34,24 @@ function cityAndType(city, htype) {
             break;
         case("Seattle"):
             switch(htype){
-                case("HouseBuy"):
-                    //go to houseBuy.html;
-                    //SQL to get houses to buy;
-                    break;
                 case("HouseRent"):
-                    //go to houseRent.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get houses to rent;
                     break;
                 case("Apartment"):
-                    //go to apartment.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get apartments;
                     break;
                 case("Condo"):
-                    //go to condo.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get condos;
                     break;
                 case("Trailer"):
-                    //go to trailer.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get trailers;
                     break;
                 case("Land"):
-                    //go to land.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get land;
                     break;
                 default:
@@ -65,28 +61,24 @@ function cityAndType(city, htype) {
             break;
         case("Las Angeles"):
             switch(htype){
-                case("HouseBuy"):
-                    //go to houseBuy.html;
-                    //SQL to get houses to buy;
-                    break;
                 case("HouseRent"):
-                    //go to houseRent.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get houses to rent;
                     break;
                 case("Apartment"):
-                    //go to apartment.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get apartments;
                     break;
                 case("Condo"):
-                    //go to condo.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get condos;
                     break;
                 case("Trailer"):
-                    //go to trailer.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get trailers;
                     break;
                 case("Land"):
-                    //go to land.html;
+                    window.location = "file:///Users/TravisWentz/github/dbProject/webpage/results.html";
                     //SQL to get land;
                     break;
                 default:
